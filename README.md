@@ -1,4 +1,4 @@
-# mern-dev
+# MERN-dev 
  This is a full-stack web application that is built using the MERN stack, which includes MongoDB, Express, React, and Node.js. It also utilizes Next.js, Docker for containerization, Concurrently for running multiple processes, JWT for authentication, and MUI (Material-UI) for the user interface.
 
 
@@ -8,7 +8,14 @@ To run the program, please follow these steps:
 2. Run "yarn installer".
 3. Run "yarn dev".
 
----
+<br/>
+
+To run Docker, please enter the following command in the terminal: 'docker-compose up -d'. \
+This command will start the Docker containers in detached mode.
+```
+docker-compose up -d
+```
+## Images
 ![test0](https://user-images.githubusercontent.com/43292234/236148350-6fa23f73-777a-4426-854b-a02ebc52fdc4.PNG)
 ![test1](https://user-images.githubusercontent.com/43292234/236148382-18cb3744-6f97-4fef-90db-24184db8ba07.png)
 ![test5](https://user-images.githubusercontent.com/43292234/236148407-41d8270b-713e-4918-a6f5-c77f5a6d0fd4.PNG)
