@@ -5,7 +5,7 @@
 ## How to run
 To run the program, please follow these steps:
 1. Change the MONGO_URI in the .env file.
-2. Run "yarn install".
+2. Run "yarn installer".
 3. Run "yarn dev".
 
 ---
