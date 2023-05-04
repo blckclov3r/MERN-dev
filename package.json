@@ -1,0 +1,19 @@
+{
+  "name": "blckclov3r",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/blckclov3r/MERN-dev.git",
+  "author": "blckclov3r <blckclov3r@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "scripts": {
+    "preinstaller": "yarn install",
+    "installer": "concurrently \"yarn install\" \"yarn --cwd frontend install\" \"yarn --cwd backend install\"",
+    "predev": "npx kill-port 3000",
+    "dev": "concurrently \"yarn --cwd frontend dev\" \"yarn --cwd backend dev\""
+  },
+  "dependencies": {}
+}

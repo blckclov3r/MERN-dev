@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  backend:
+    container_name: backend
+    restart: on-failure
+    image: backend-prod:1.0.0
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    networks:
+      - shared-network
+    volumes:
+      - ./backend:/app
+  frontend:
+    container_name: frontend
+    restart: always
+    image: frontend-prod:1.0.0
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - shared-network
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+networks:
+  shared-network:
